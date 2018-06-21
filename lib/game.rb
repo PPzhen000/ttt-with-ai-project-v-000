@@ -49,7 +49,8 @@ class Game
   end
 
   def turn
-
+    puts "Hey there! Please select a position!"
+    input = gets.strip 
   end
 
   def self.play
