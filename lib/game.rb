@@ -61,6 +61,11 @@ class Game
     until over?
       turn
     end
+    if won?
+      puts "Congratulations! #{winner}! You did a great job"
+    elsif draw?
+      puts "Cat's Game!"
+    end 
   end
 
 end
