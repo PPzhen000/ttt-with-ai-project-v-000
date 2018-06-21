@@ -39,12 +39,13 @@ class Game
   end
 
   def over?
-    board.full? || won? || draw? 
+    board.full? || won? || draw?
   end
 
   def winner
     if won?
       board.cells[won?[0]]
+    end 
   end
 
   def self.turn
