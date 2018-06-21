@@ -29,7 +29,9 @@ class Game
 
   def won?
     WIN_COMBINATIONS.detect do |combination|
-      combination[0] == combination[1] && combination[0] == combination[2] && combination[0] != " " 
+      board.cells[combination[0]] == board.cells[combination[1]] 
+      && board.cells[combination[0]] == board.cells[combination[2]] 
+      && board.cells[combination[0]] != " " 
     end
   end
 
