@@ -43,7 +43,8 @@ class Game
   end
 
   def winner
-
+    if won?
+      board.cells[won?[0]]
   end
 
   def self.turn
