@@ -54,11 +54,11 @@ class Game
       board.update(input, current_player)
     else
       turn
-    end 
+    end
   end
 
-  def self.play
-
+  def play
+    
   end
 
 end
