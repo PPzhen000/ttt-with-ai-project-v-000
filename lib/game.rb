@@ -39,7 +39,7 @@ class Game
   end
 
   def over?
-    board.full? || won? || draw?
+    won? || draw?
   end
 
   def winner
@@ -50,7 +50,7 @@ class Game
 
   def turn
     puts "Hey there! Please select a position!"
-    input = gets.strip 
+    input = gets.strip
   end
 
   def self.play
