@@ -58,7 +58,9 @@ class Game
   end
 
   def play
-    
+    until over?
+      turn
+    end
   end
 
 end
