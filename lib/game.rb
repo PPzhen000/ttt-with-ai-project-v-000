@@ -49,7 +49,12 @@ class Game
   end
 
   def turn
-    current_player.move(@board)
+    input = current_player.move(@board)
+    if board.valid_move?(input)
+      board.update(input, current_player)
+    else
+      turn
+    end 
   end
 
   def self.play
